@@ -4,25 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="calculator">
-    <div class="input-screen">
-        <input type="text" id="first-number" >
-        <input type="text" id="second-number">
+    <div class="screen">
+      <div id="previousCalc">test</div>
+      <div id="currentCalc">test</div>
     </div>
-    <div class="buttons">
-      <button>Add</button>
-      <button>Subtract</button>
-      <button>Multiply</button>
-      <button>Divide</button>
-    </div>
-    <div class="result-container">Result: <div class="result"></div></div>
+      <div class="row">
+        <button id="c">C</button>
+        <button id="ac">AC</button>
+      </div>
+      <div class="row">
+        <button class="number" id="7">7</button>
+        <button class="number" id="8">8</button>
+        <button class="number" id="9">9</button>
+        <button id="divide">÷</button>
+      </div>
+      <div class="row">
+        <button class="number" id="4">4</button>
+        <button class="number" id="5">5</button>
+        <button class="number" id="6">6</button>
+        <button id="multiply">x</button>
+      </div>
+      <div class="row">
+        <button class="number" id="1">1</button>
+        <button class="number" id="2">2</button>
+        <button class="number" id="3">3</button>
+        <button id="subtract">-</button>
+      </div>
+      <div class="row" id="row5">
+        <button class="number" id="0">0</button>
+        <button class="number" id="dot">.</button>
+        <button class="number" id="equals">=</button>
+        <button id="add">+</button>
+      </div>
   </div>
 </body>
+<script src="javascript.js"></script>
 </html>

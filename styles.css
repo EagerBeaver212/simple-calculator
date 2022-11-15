@@ -1,75 +1,78 @@
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 36px
-}
-
-button {
-  font-size: 24px
-}
-
-
-input {
-  font-size: 36px;
-  width: 264px;
+  justify-content: center;
+  height: 98.4vh;
+  font-family: sans-serif;
 }
 
 .calculator {
-  height: 400px;
-  width: 600px;
-  border: 5px solid grey;
-  border-radius: 10px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-screen {
-  display: flex;
-  justify-content: space-between;
-  font-size: 36px;
-}
-
-#first-number,
-#second-number {
-  margin: 0 0 24px 0;
-}
-
-.input1,
-.input2 {
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.input-screen {
-  display: flex;
   justify-content: center;
-  gap: 24px;
+  border: 2px solid grey;
+  border-radius: 16px;
+  background-color: lightgray
 }
 
-.buttons {
+.row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  min-width: 90%;
+  margin: 8px 0 8px 0;
+}
+
+.screen {
+  min-width: 90%;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: right;
+  height: 100px;
+  margin: 25px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+#previousCalc {
+  margin-right: 16px;
+  font-size: 28px;
   margin-top: 8px;
 }
 
-.result-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 0 auto;
-  justify-content: center;
+#currentCalc {
+  margin-right: 16px;
+  font-size: 48px;
+  margin-bottom: 4px;
 }
 
-.result {
-  border: 2px solid black;
-  display: flex;
-  width: 256px;
-  height: 64px;
-  margin-bottom: 16px;
-  margin-top: 4px;
-  border-radius: 4px;
+button {
+  height: 90px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 38px;
+}
+
+#c,
+#ac {
+  width: 217px;
+}
+
+#c {
+  background-color: orange;
+}
+
+#ac {
+  background-color: orangered;
+}
+
+#equals {
+  background-color: green;
+}
+
+#row5 {
+  margin-bottom: 25px;
 }
