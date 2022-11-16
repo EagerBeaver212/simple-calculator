@@ -5,6 +5,7 @@ body {
   height: 98.4vh;
   font-family: sans-serif;
   background-color: black;
+  flex-direction: column;
 }
 
 .calculator {
@@ -63,10 +64,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-button:hover {
-  transform: scale(1.05);
-}
-
 #clear,
 #allClear {
   width: 217px;
@@ -86,4 +83,11 @@ button:hover {
 
 #row5 {
   margin-bottom: 25px;
+}
+
+footer {
+  color: white;
+  margin-top: 200px;
+  position: fixed;
+  bottom: 5%;
 }
