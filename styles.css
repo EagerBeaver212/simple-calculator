@@ -28,7 +28,7 @@ body {
 .screen {
   min-width: 90%;
   border: 1px solid black;
-  border-radius: 8px;
+  border-radius: 16px;
   text-align: right;
   height: 100px;
   margin: 25px 0 10px 0;
@@ -53,7 +53,7 @@ body {
 button {
   height: 90px;
   width: 100px;
-  border-radius: 8px;
+  border-radius: 16px;
   font-size: 38px;
 }
 

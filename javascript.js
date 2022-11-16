@@ -4,12 +4,7 @@ let currentCalc = document.querySelector("#currentCalc")
 let clear = document.querySelector("#clear")
 let allClear = document.querySelector("#allClear")
 let numbers = document.querySelectorAll(".number")
-let divide = document.querySelector("#divide")
-let multiply = document.querySelector("#multiply")
-let subtract = document.querySelector("#subtract")
-let add = document.querySelector("#addition")
 let equals = document.querySelector("#equals")
-let decimal = document.querySelector("#dot")
 let operators = document.querySelectorAll(".operator")
 
 let operator = '';
@@ -33,6 +28,10 @@ allClear.addEventListener("click", () => clearAll())
 function clearCurrent() {
   currentValue = '';
   currentCalc.textContent = currentValue;
+  console.log("cv " + currentValue)
+  console.log("pv " + previousValue)
+  currentValue = previousValue;
+  previousCalc.textContent = previousValue;
 }
 
 function clearAll() {
@@ -57,6 +56,9 @@ function handleOperator(op) {
 
 equals.addEventListener("click", function(){
   calculate()
+  previousCalc.textContent += " " + currentValue
+  currentCalc.textContent = previousValue
+  currentValue = previousValue
 })
 
 function calculate() {
@@ -76,7 +78,8 @@ function calculate() {
     previousValue /= currentValue;
   }
   previousValue = roundNumber(previousValue)
-  console.log(previousValue);
+  // previousValue = previousValue.toString();
+  // currentValue = previousValue.toString();
 }
 
 function roundNumber(num){
