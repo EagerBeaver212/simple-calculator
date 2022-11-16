@@ -4,6 +4,7 @@ body {
   justify-content: center;
   height: 98.4vh;
   font-family: sans-serif;
+  background-color: black;
 }
 
 .calculator {
@@ -56,16 +57,16 @@ button {
   font-size: 38px;
 }
 
-#c,
-#ac {
+#clear,
+#allClear {
   width: 217px;
 }
 
-#c {
+#clear {
   background-color: orange;
 }
 
-#ac {
+#allClear {
   background-color: orangered;
 }
 
